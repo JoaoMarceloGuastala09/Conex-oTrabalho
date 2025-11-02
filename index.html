@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hollow Knight</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="logo-container" onclick="hideLogo()">
+        <canvas id="particles-canvas"></canvas>
+        <img id="logo" src="imgs/hollowKnight/hollowKnight-Logo.png" alt="Hollow Knight Logo">
+        <h2>Clique na logo para entrar</h2>
+    </div>
+
+
+    <div id="site-content" style="display:none;">
+
+        <header>
+            <audio id="guarana">
+                <source src="audio/GuaranaCorreto.mp3" type="audio/mpeg">
+                Seu navegador não suporta esse elemento de áudio
+            </audio>
+            
+            <button id="tocarGUarana">
+                <img src="imgs/hollowKnight/hornet-Personagem.webp" alt="Hornet" class="easter-egg-">
+            </button>
+            
+            <script>
+                const meuAudio = document.getElementById('guarana');
+                const botaoTocarSom = document.getElementById('tocarGUarana');
+                
+                botaoTocarSom.addEventListener('click', function() {
+                    meuAudio.play(); 
+                });
+            </script>
+            <h1>Hollow Knight</h1>
+            <nav>
+                <a href="#Historia">História</a>
+                <a href="#Objetivos">Objetivos</a>
+                <a href="#Personagens">Personagens</a>
+                <a href="#Imagem">Imagens</a>
+            </nav>
+        </header>
+
+        <section>
+            <h2 id="Historia">História</h2>
+            <p class="paragrafoPersonalizado">&nbsp;&nbsp;&nbsp;Hollow Knight se passa em Hallownest, um antigo reino subterrâneo habitado por insetos sencientes. Você controla o Knight, um pequeno e silencioso guerreiro, que chega à cidade de Dirtmouth e desce nas ruínas em busca de respostas. O núcleo do enredo é uma praga mental chamada Infection, originada da entidade conhecida como Radiance, que invade e corrompe os insetos deixando-os violentos e enlouquecidos. O reino foi fundado e moldado pelo Pale King, que tentou conter a Radiance criando “Vessels” para selá-la, mas algo deu errado. Ao longo do jogo o jogador explora áreas interconectadas, descobre fragmentos de lore, enfrenta inimigos e chefes, e decide qual final obter ao confrontar a fonte da Infecção.</p>
+        </section>
+
+        <section>
+            <h2 id="Objetivos">Objetivos</h2>
+            <p class="paragrafoPersonalizado">&nbsp;&nbsp;&nbsp;Explorar Hallownest, reunir mapas e habilidades, derrotar chefes, coletar charms e recursos, e descobrir por pistas e encontros a verdade por trás da queda do reino.</p>
+        </section>
+
+       
+        <h2 id="Personagens">Personagens Principais</h2>
+        <div class="carrossel-container">
+            <button class="carrossel-btn esquerda">&#10094;</button>
+            <div class="carrossel">
+                <div class="personagem">
+                    <img src="imgs/hollowKnight/knight-Pesonagem.png" alt="Cavaleiro">
+                    <div class="informacoesCarrossel">
+                        <h3>O Cavaleiro</h3>
+                        <p>Personagem jogável; um Vessel silencioso nascido no Abismo, com ligação ao Void. Sua jornada é descobrir quem é e o papel que tem em Hallownest.</p>
+                    </div>
+                </div>
+                <div class="personagem">
+                    <img src="imgs/hollowKnight/hornet-Personagem.webp" alt="Hornet">
+                    <div class="informacoesCarrossel">
+                        <h3>Hornet</h3>
+                        <p>Guerreira ágil e importante NPC/chef (também aparece em Silksong). Serve como rival/aliada em momentos; tem ligação familiar com o Pale King.</p>
+                    </div>
+                </div>
+                <div class="personagem">
+                    <img src="imgs/hollowKnight/reiPalido-Personagem.png" alt="O Rei Pálido">
+                    <div class="informacoesCarrossel">
+                        <h3>O Rei Pálido</h3>
+                        <p>Antigo governante/higher being que elevou Hallownest e criou os Vessels; suas ações explicam grande parte da história.</p>
+                    </div>
+                </div>
+                <div class="personagem">
+                    <img src="imgs/hollowKnight/radiance-Personagem.webp" alt="Radiance">
+                    <div class="informacoesCarrossel">
+                        <h3>Radiance</h3>
+                        <p>Entidade antiga (adoração das mariposas) que alimentou os sonhos e que acabou sendo a origem da Infecção.</p>
+                    </div>
+                </div>
+                <div class="personagem">
+                    <img src="imgs/hollowKnight/dreamersi.png" alt="Dreamers">
+                    <div class="informacoesCarrossel">
+                        <h3>Os Sonhadores</h3>
+                        <p>Três personagens que atuam como selos vivos do templo. Derrotá-los abre o caminho ao confronto final.</p>
+                    </div>
+                </div>
+                <div class="personagem">
+                    <img src="imgs/hollowKnight/damaBranca-Personagem.png" alt="Dama Branca">
+                    <div class="informacoesCarrossel">
+                        <h3>A Dama Branca</h3>
+                        <p>Figura ligada ao Void; tem papel emocional/lore importante (mãe de Vessels)</p>
+                    </div>
+                </div>
+                <div class="personagem">
+                    <img src="imgs/hollowKnight/todospng.png" alt="NPCs notáveis">
+                    <div class="informacoesCarrossel">
+                        <h3>NPCs Notáveis</h3>
+                        <p>Iselda/Cornifer (mapas), Salubra (vendedora de charms e bênçãos), Zote/Quirrel/Cloth (companheiros/figuras do caminho) — cada um adiciona cor, quests e fragmentos de lore.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carrossel-btn direita">&#10095;</button>
+        </div>
+
+        <section>
+            <h2 class="mapaDoJogo" id="Imagem">Mapa do Jogo</h2>
+            <img id="imagemMapa" src="imgs/hollowKnight/hollowKnight-Mapa.png" alt="Mapa de Hallownest">
+        </section>
+
+    </div>
+
+    <audio id="hollowKnightMusicaFundo" loop muted>
+        <source src="audio/hollowKnightMusicaFundo.mp3" type="audio/mpeg">
+        Seu navegador não suporta o elemento de áudio.
+    </audio>
+
+    <footer>
+        <p>Site feito por João Marcelo & Lucas Gabriel</p>
+
+        <audio id="mylittleponygrito">
+            <source src="audio/myLittlePonyAudio.mp3" type="audio/mpeg">
+            Seu navegador não suporta esse elemento de áudio
+        </audio>
+
+        <button id="easterEggBtn">
+            <img src="imgs/easterEggs/twilightSparkle.png" alt="Easter Egg">
+        </button>
+    </footer>
+
+    <script>
+        const meuAudio2 = document.getElementById('mylittleponygrito');
+        const botaoTocarSom2 = document.getElementById('easterEggBtn');
+
+        meuAudio2.volume = 1.0;
+
+        botaoTocarSom2.addEventListener('click', function() {
+            meuAudio2.play();
+            
+        });
+    </script>
+
+    <script src="script.js"></script>
+</body>
+</html>
